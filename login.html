@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Login</title>
+    <meta charset="UTF-8">
+    <title>Login | Endangered Species ID</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-  <h2>Login</h2>
-  <form>
-    <input type="text" placeholder="Username"><br><br>
-    <input type="password" placeholder="Password"><br><br>
-    <button>Login</button>
-  </form>
+
+<div class="login-container">
+    <div class="login-box">
+        <h2>Welcome Back 🌿</h2>
+        <p>Login to continue</p>
+
+        <form>
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" placeholder="Enter username" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Enter password" required>
+            </div>
+
+            <div class="input-group">
+                <label>Login As</label>
+                <select>
+                    <option>User</option>
+                    <option>Admin</option>
+                </select>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p class="footer-text">Don't have an account? <a href="#">Register</a></p>
+    </div>
+</div>
+
 </body>
 </html>
